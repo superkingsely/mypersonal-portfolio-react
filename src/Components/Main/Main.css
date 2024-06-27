@@ -115,6 +115,10 @@
         margin-left: auto;
 
     }
+    .section-content.home .intro{
+        width: 100%;
+        /* border: 2px solid; */
+    }
     .section-content.home .intro .name{
         font-size: 3.0rem;
     }
