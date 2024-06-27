@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Header from './Components/Header/Header'
 import Main from './Components/Main/Main'
 import Footer from './Components/Footer/Footer'
-import { init } from 'ityped'
+// import { init } from 'ityped'
 
 const App = () => {
   // navbar data
