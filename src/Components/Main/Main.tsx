@@ -118,7 +118,7 @@ const Main = ({
       </section>
       <section id="contact/hire">
         <div className="section-content">
-          <form className="w-1/2 mx-auto">
+          <form className="max-w-[500px] mx-auto">
             <div className="form-group">
               <label htmlFor="">Name:</label>
               <input type="text" className="form-control" />
