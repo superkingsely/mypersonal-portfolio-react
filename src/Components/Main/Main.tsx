@@ -14,16 +14,16 @@ const Main = ({
     <main className="min-h-[100vh] ">
       {/* home */}
       <section id="home" className="min-h-[inherit] ">
-        <div className="section-content flex min-h-[inherit]">
+        <div className="section-content home flex min-h-[inherit]">
           <div className="img w-1/2">
-            <img src={me} alt="" />
+            <img className="me" src={me} alt="" />
           </div>
           <div className="intro w-1/2 flex flex-col justify-center">
             <span className="font-bold text-3xl">Hi There,I'm</span>
             <br />
-            <span className="font-extrabold text-6xl">
+            <span className="font-extrabold text-6xl name">
               Onwumelu Chijioke
-            </span>{" "}
+            </span>
             <br />
             <div className="flex space-x-2">
               <span className="font-bold text-3xl">a</span>
@@ -77,7 +77,7 @@ const Main = ({
       {/* projects */}
       <section id="projects">
         <div className="section-content">
-          <div className="slider mx-auto w-[500px] h-[300px] border relative overflow-hidden mt-[10vh]">
+          <div className="slider mx-auto max-w-[500px] h-[300px] border relative overflow-hidden mt-[10vh]">
             <span className="left z-10 " onClick={() => handleslideleft()}>
               v
             </span>
@@ -104,7 +104,7 @@ const Main = ({
                 h-[50vh] mx-auto
                 rounded-[50%] "></div>
                 </div> */}
-          <div className="skill-container">
+          <div className="skill-container ">
             {
             skills.map((obj: any) => {
               return (<div className="skill-icon " id={obj.skill} key={obj.id}></div>);

@@ -77,4 +77,12 @@ section{
     margin: 0;
     gap: 20px;
   }
+  /* main */
+  /* .section-content.home{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 20px;
+    border: 5px solid;
+  } */
 }
