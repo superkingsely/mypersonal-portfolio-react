@@ -55,12 +55,12 @@ const App = () => {
     },
   ]
   //Project
-  const projects=[
-    {
-      id:1,
-      img:''
-    }
-  ]
+  // const projects=[
+  //   {
+  //     id:1,
+  //     img:''
+  //   }
+  // ]
   // skills
   const skills=[
     {
@@ -90,13 +90,13 @@ const App = () => {
   const slidesref=useRef()
   const write=useRef()
   const [count,setCount]=useState(0)
-  useEffect(()=>{
-    const myElement = write.current;
-    if (myElement) {
-      console.log('okay')
-      init(myElement, { showCursor: false, strings: ['Frontend-dev', 'Backend-dev'] });
-    }
-  },[])
+  // useEffect(()=>{
+  //   const myElement = write.current;
+  //   if (myElement) {
+  //     console.log('okay')
+  //     init(myElement, { showCursor: false, strings: ['Frontend-dev', 'Backend-dev'] });
+  //   }
+  // },[])
   // functions
   const handlemenuclick=()=>{
     console.log(navref.current)
