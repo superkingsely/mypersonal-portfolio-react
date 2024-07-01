@@ -73,7 +73,12 @@ const Main = ({
           </p>
         </div>
       </section>
-      <section id="resume|Cv">re</section>
+      {/* resume */}
+      <section id="resume|Cv">
+        <div className="section-content">
+
+        </div>
+      </section>
       {/* projects */}
       <section id="projects">
         <div className="section-content">
@@ -118,6 +123,7 @@ const Main = ({
       </section>
       <section id="contact/hire">
         <div className="section-content">
+          <h2 className="my-2">Contact me</h2>
           <form className="max-w-[500px] mx-auto">
             <div className="form-group">
               <label htmlFor="">Name:</label>
