@@ -1,41 +1,75 @@
-import React from 'react'
-import menu from './menu-line.png'
+import { useState } from 'react';
+import '../Header/Header.css'
 import close from './close-line.png'
+import open from './menu-line.png'
+const Header = () => {
+  const navItems = [
+    {
+      id: 1,
+      innerText: "Home",
+      url: "#home",
+    },
+    {
+      id: 2,
+      innerText: "Services",
+      url: "#services",
+    },
+    {
+      id: 3,
+      innerText: "Experience",
+      url: "#experience",
+    },
+    {
+      id: 4,
+      innerText: "Portfolio",
+      url: "#portfolio",
+    },
+    {
+      id: 5,
+      innerText: "Testimonial",
+      url: "#testimonial",
+    },
+  ];
+  // state
+  const[ismenuopen,setIsmenuopen]=useState(false)
+  const handleMenuOpen=()=>{
+    setIsmenuopen(true)
+  }
+  const handleMenuClose=()=>{
+    setIsmenuopen(false)
+  }
 
-const Header = ({navbar,handlemenuclick,navref,handlemenucancel}:any) => {
   return (
-    <header 
-    className='min-h-[10vh] text-white bg-black fixed right-0 left-0 z-50 top-0'
-    >
-        <div className="header-content max-w-[1200px]  mx-auto min-h-[10vh] flex items-end justify-between" >
-            <a href="#home" className='text-white font-extrabold text-4xl no-underline'>Logo</a>
-
-            <nav className='flex' ref={navref}>
-            <span className=' desktop-menu mx-auto rounded-circle'  onClick={handlemenucancel}>
-                <img  src={close} alt="" 
-                className='bg-white w-[30px] h-[30px] rounded-circle my-2 cursor-pointer' 
-                />
-            </span>
-                <ul className='list-style-none text-white flex space-x-4  m-0'>
-                    {
-                        navbar.slice(0,6).map((item:any)=>{
-                            return(
-                                <li className='' key={item.id}>
-                                    <a className='text-white font-bold no-underline text-1xl
-                                    cursor-pointer
-                                    ' href={item.url}>{item.link}</a>
-                                </li>
-                            )
-                        })
-                    }
-                </ul>
-            </nav>
-            <span className=' desktop-menu cursor-pointer' onClick={handlemenuclick}>
-                <img src={menu} alt="" 
-                className='bg-white'
-                />
-            </span>
-        </div>
+    <header>
+      <div className="header-content">
+        <a href="#home" className="logo">Logo</a>
+        <nav 
+        onClick={handleMenuClose}
+        className={ismenuopen?'clicked':''}>
+          
+          <img
+          src={close}
+          alt=''
+          onClick={handleMenuClose} 
+          className='menu-close'/>
+          <ul >
+            {
+              navItems.map((obj:any)=>{
+               return(
+                <li key={obj.id}>
+                <a href={obj.url}>{obj.innerText}</a>
+             </li>
+               )
+              })
+            }
+          </ul>
+        </nav>
+        < img
+        alt=''
+          src={open}
+          onClick={handleMenuOpen} 
+          className='menu-open'/>
+      </div>
     </header>
   )
 }
