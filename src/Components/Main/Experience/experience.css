@@ -1,0 +1,29 @@
+.experience{
+    border: 2px solid;
+    min-height: 100vh;
+    margin-top: 10vh;
+}
+.section-content{
+    min-height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid green;
+
+}
+.left{
+    flex: 1 1 300px ;
+    background-color: aqua;
+    min-height: 100vh;
+    border: 2px solid green;
+    
+}
+.right{
+    flex: 1 1 300px ;
+    background-color: aquamarine;
+    min-height: 100vh;
+    border: 2px solid green;
+
+}
