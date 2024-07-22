@@ -60,7 +60,7 @@ const Home = () => {
               <div className='write'>
               <span>I'm A ;</span>
               <ReactTyped
-              strings={['Frontend Dev','Backend Dev','ASP.NET Dev','Nodejs Developer','React Developer','Angular Developer']}
+              strings={['Frontend Dev','Backend Dev','ASP.NET Dev','Nodejs Dev','React Dev','Angular Dev']}
               typeSpeed={40}
               backSpeed={100}
               loop={true}

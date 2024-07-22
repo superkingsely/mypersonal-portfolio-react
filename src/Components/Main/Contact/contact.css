@@ -88,5 +88,9 @@ textarea{
     color: yellow;
 }
 @media (max-width:600px) {
-   
+    .h1-not-c{
+        margin-top: 0vh;
+        font-size: 4rem;
+    
+    }
 }

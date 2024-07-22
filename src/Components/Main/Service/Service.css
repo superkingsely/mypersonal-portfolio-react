@@ -59,12 +59,12 @@
 }
 @media (max-width:600px) {
     .card-dev{
-        top: 270px;
+        top: 380px;
         left: 0;
     }
     .card-de{
         right: 0;
-        top: 500px;
+        top: 700px;
     }
     .card-ui{
         right: 0;

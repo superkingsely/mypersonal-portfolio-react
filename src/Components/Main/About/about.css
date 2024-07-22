@@ -19,5 +19,8 @@
     font-weight: 500;
 }
 @media (max-width:600px) {
-    
+    .about .section-content>span{
+        margin-top: 10px;
+        font-size: 4rem;
+    }
 }
