@@ -64,9 +64,7 @@ nav a{
 
 
 @media (max-width:600px) {
-    header{
-        /* overflow: hidden; */
-    }
+   
     .menu-open{
         display: block;
         background-color: blue;
