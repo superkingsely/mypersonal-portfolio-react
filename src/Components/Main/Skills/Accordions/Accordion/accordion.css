@@ -1,0 +1,39 @@
+.acc-animate{
+    width: 100%;
+}
+.acc-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    padding: 0 10px;
+    background-color: yellow;
+    margin-top: 3px;
+    cursor: pointer;
+    min-height: 50px;
+}
+.acc-header>div:nth-child(3){
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 22px;
+}
+.acc-body{
+    transition: all 2s;
+    margin-top: 20px;
+}
+/* .acc-animate{
+    overflow: hidden;
+    min-height: 40px;
+    transition: all 2s;
+
+}
+.acc-animate.clicked{
+    overflow: hidden; 
+    min-height: 40px;
+} */

@@ -10,20 +10,39 @@
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 
 }
-.left{
-    flex: 1 1 300px ;
-    background-color: aqua;
-    min-height: 100vh;
-    border: 2px solid green;
-    
+.span{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    padding: 0;
+    margin-bottom: 0;
 }
-.right{
-    flex: 1 1 300px ;
-    background-color: aquamarine;
-    min-height: 100vh;
-    border: 2px solid green;
-
+.span>span{
+    margin-top: 30vh;
+    font-size: 2rem;
+}
+.span>span>span{
+    font-size: 3rem;
+    color: yellow;
+    margin: 0 5px;
+}
+.testimonial .swiper{
+    border: 2px solid;
+    max-width: 600px;
+    height: 300px;
+    margin-top: -90px;
+}
+.swiper-slide{
+    width: 100%;
+    background-color: red;
+    border: 5px solid white;
+}
+.ye{
+    background-color: yellowgreen;
+}
+@media (max-width:600px) {
+   
 }

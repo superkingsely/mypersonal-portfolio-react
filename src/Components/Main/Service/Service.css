@@ -1,5 +1,5 @@
 .service{
-    border: 2px solid;
+    /* border: 2px solid; */
     min-height: 100vh;
     margin-top: 10vh;
 }
@@ -10,20 +10,64 @@
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 
 }
 .left{
     flex: 1 1 300px ;
-    background-color: aqua;
+    /* background-color: aqua; */
     min-height: 100vh;
-    border: 2px solid green;
-    
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
 }
 .right{
     flex: 1 1 300px ;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     min-height: 100vh;
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    position: relative;
+}
+.card-e{
+    position: absolute;
+}
+.card-dev{
+    top: 200px;
+    left: 0;
+}
+.card-de{
+    right: 0;
+    top: 330px;
+}
+.card-ui{
+    right: 0;
+    top: -30px;
+}
+.h1-not-s{
+    margin-top: 30vh;
+    font-size: 4rem;
 
+}
+.h1-colored-s{
+    font-size: 4rem;
+    color: yellow;
+}
+.left .lp{
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: 500;
+}
+@media (max-width:600px) {
+    .card-dev{
+        top: 270px;
+        left: 0;
+    }
+    .card-de{
+        right: 0;
+        top: 500px;
+    }
+    .card-ui{
+        right: 0;
+        top: 10px;
+    }
 }

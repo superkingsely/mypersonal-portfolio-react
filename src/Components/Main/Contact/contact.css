@@ -1,0 +1,92 @@
+.contact{
+    /* border: 2px solid; */
+    min-height: 100vh;
+    margin-top: 10vh;
+    position: relative;
+}
+.section-content{
+    min-height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid green; */
+
+}
+.left{
+    flex: 1 1 300px ;
+    /* background-color: aqua; */
+    min-height: 100vh;
+    /* border: 2px solid green; */
+    
+}
+form{
+    max-width: 500px;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.form-group{
+    width: 100%;
+    margin-bottom: 35px;
+   
+}
+input{
+    border: 5px solid yellow;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
+textarea{
+    border: 5px solid yellow;
+    outline: none;
+    width: 100%;
+    resize: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+.right-c{
+    flex: 1 1 300px ;
+    /* background-color: aquamarine; */
+    min-height: 100vh;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-c>div:nth-child(3){
+    margin-top: 20px;
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+}
+.right-c>:nth-child(3)>span:nth-child(1){
+    font-size: 2rem;
+    color: yellow;
+}
+.right-c>:nth-child(3)>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: blue;
+}
+.h1-not-c{
+    margin-top: 15vh;
+    font-size: 4rem;
+
+}
+.h1-colored-c{
+    font-size: 4rem;
+    color: yellow;
+}
+@media (max-width:600px) {
+   
+}

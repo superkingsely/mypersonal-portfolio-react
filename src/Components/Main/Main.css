@@ -4,3 +4,36 @@ main{
   /* margin-top: 10vh; */
   /* padding-top: 15vh; */
 }
+
+
+.swiper{
+  /* border: 2px solid; */
+  max-width: 600px;
+  height: 300px;
+}
+.swiper-wrapper{
+  /* border: 20px solid green; */
+  width: 100%;
+
+}
+.swiper-slide{
+  width: 100%;
+  /* background-color: red; */
+  /* border: 5px solid white; */
+}
+.swiper-pagination.swiper-pagination-bullets{
+  width: 100%;
+} 
+@media (max-width:600px) {
+  .section-content{
+     margin: 0;
+     width: inherit;
+      /* border: 2px solid rgb(55, 0, 255); */
+  
+  }
+  .swiper{
+    /* border: 2px solid; */
+    max-width: 300px;
+    height: 300px;
+  }
+}

@@ -1,29 +1,33 @@
 .portfolio{
-    border: 2px solid;
+    /* border: 2px solid; */
     min-height: 100vh;
     margin-top: 10vh;
 }
-.section-content{
+.portfolio .section-content{
     min-height: 100vh;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    flex-wrap: wrap;
-    border: 2px solid green;
+    flex-direction: column;
+    position: relative;
+    /* flex-wrap: wrap; */
+    /* border: 2px solid green; */
 
 }
-.left{
-    flex: 1 1 300px ;
-    background-color: aqua;
-    min-height: 100vh;
-    border: 2px solid green;
-    
+.portfolio .span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.right{
-    flex: 1 1 300px ;
-    background-color: aquamarine;
-    min-height: 100vh;
-    border: 2px solid green;
+.portfolio .span>span~span{
+    margin-bottom: 5vh;
+    margin-top: 0;
+}
+.portfolio .span>span{
+    margin-top: 10vh;
+}
 
+@media (max-width:600px) {
+   
 }

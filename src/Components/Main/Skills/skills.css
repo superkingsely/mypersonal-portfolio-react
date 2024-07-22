@@ -1,0 +1,156 @@
+/* .skills{} */
+.skills .section-content{
+    
+}
+.left-sk{
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-sk{
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-sk>span{
+    margin-top: 50px;
+    font-size: 4rem;
+
+}
+.right-sk>span{
+    margin-top: 50px;
+    font-size: 4rem;
+
+}
+.left-sk>div{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Skill wheel */
+
+.wheel-of-circle{
+    max-width: 400px;
+    min-height: 400px;
+    /* border: 5px solid; */
+    border-radius: 100%;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-shadow: 5px 5px 5px ;
+    animation: rotate 20s linear infinite;
+}
+.innercircle{
+    width: 20%;
+    height: 20%;
+    border: 3px solid;
+    border-radius: 100%;
+    position: absolute;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.innercircle>img{
+    width: 80%;
+    height: 80%;
+    /* border-radius: 100%; */
+    /* border: 3px solid red; */
+}
+.proj-1{
+    /* css */
+    top: 40%;
+    left: 40%;
+}
+.proj-2{
+    /* js */
+    top: -10%;
+    left: 42%;
+}
+.proj-3{
+    /* html */
+    top: 0%;
+    left: 70%;
+}
+.proj-4{
+    /* react */
+    top: 20%;
+    left: 85%;
+}
+.proj-5{
+    /* c# */
+    top: 50%;
+    left: 90%;
+}
+.proj-6{
+    /* .net */
+    top: 75%;
+    left: 75%;
+}
+.proj-7{
+    /* Angular */
+    top: 90%;
+    left: 50%;
+}
+.proj-8{
+    /* git */
+    top: 85%;
+    left: 20%;
+}
+.proj-9{
+    /* bootstarp */
+    top: 65%;
+    left: -5%;
+}
+.proj-10{
+    /* sql */
+    top: 35%;
+    left: -10%;
+}
+.proj-11{
+    /* tailwind */
+    top: 10%;
+    left: -5%;
+}
+.proj-12{
+    /* nodejs */
+    top: -5%;
+    left: 15%;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:600px) {
+    .left-sk>span{
+        margin-top: 150px;
+        font-size: 4rem;
+    
+    }
+    .wheel-of-circle{
+        max-width: 300px;
+        min-height: 300px;
+        /* border: 5px solid; */
+        border-radius: 100%;
+        position: relative;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        box-shadow: 5px 5px 5px ;
+        animation: rotate 20s linear infinite;
+
+    }
+}

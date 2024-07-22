@@ -1,0 +1,30 @@
+.ring-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-circle{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom,blue,yellow);
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s-circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.r-span{
+    font-size: 32px;
+    max-width: 100px;
+    text-align: center;
+    line-height: 35px;
+}

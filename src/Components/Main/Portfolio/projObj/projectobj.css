@@ -1,0 +1,153 @@
+.project-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* cut the modal away */
+    overflow: hidden;
+}
+.project-img>img{
+   width: 100%;
+   height: 100%;
+   /* margin-top: -200px; */
+}
+/* hover screen */
+
+/* #region */
+.project-img:hover::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.589);
+    z-index: 1;
+}
+/* #endregion */
+
+/* -------hover detail */
+
+/* #region */
+
+.projObj{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.po{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.header.projname{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: yellow;
+}
+.header.projname>span{
+    /* color: rgb(220, 218, 255); */
+    color: rgb(0, 0, 255);
+    font-weight: 600;
+    font-size: x-large;
+    
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+}
+.middle .box{
+    flex: 1 1 0;
+    margin-top: 5px;
+    
+}
+.middle .box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 5px solid; */
+    padding-bottom: 0;
+}
+.middle .box1>div>span:first-child{
+    color: yellow;
+    font-size: larger;
+}
+.middle .box1>div>span:nth-child(2){
+    color: rgb(0, 0, 255);
+    background-color: rgb(173, 173, 0);
+    font-size: larger;
+    margin-left: 3px;
+}
+.middle .box2>span:first-child{
+    color: yellow;
+    font-size: larger;
+}
+.middle .box2>:nth-child(2){
+    color: rgb(0, 0, 255);
+    background-color: rgb(173, 173, 0);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    /* max-width: 250px; */
+    margin-bottom: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    
+}
+.btns-pro{
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+/* #endregion */
+
+/* detail modal */
+
+/* #region */
+.modal-proj{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    /* transform: scale(1.5); */
+    z-index: 5;
+}
+.modal-proj .skin{
+    width: 100%;
+    padding: 5px 10px;
+}
+.modal-proj .skin>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.modal-proj .skin>div>img{
+    cursor: pointer;
+}
+/* #endregion */
+
+@media (max-width:600px) {
+    .middle .box2>:nth-child(2){
+        color: rgb(0, 0, 255);
+        background-color: rgb(173, 173, 0);
+        font-size: 16px;
+        font-weight: 400;
+        text-align: start;
+        /* max-width: 250px; */
+        margin-bottom: 0;
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+    
+    }
+}
