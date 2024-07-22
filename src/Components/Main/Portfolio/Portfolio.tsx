@@ -28,8 +28,8 @@ const Portfolio = () => {
       framework:'React',
       status:true,
       packages:'swiper|tailwind|framer-motion|emailjs|react-typed',
-      src:'github.com/superkingsely',
-      view:'',
+      src:'https://github.com/superkingsely/mypersonal-portfolio-react/tree/reactPortfolio',
+      view:'https://chijioke-portfolio1.netlify.app/',
       // modal
       isdetails:true,
       details:'okay noting much just check it out in the view and if u want the source code u can also check that out by clickin the source. src code link avaliable on github.com/superkingsely',
@@ -83,6 +83,8 @@ const Portfolio = () => {
                 framework={obj.framework}
                 packages={obj.packages}
                 status={obj.status}
+                src={obj.src}
+                view={obj.view}
                 />
               </SwiperSlide>
                   )

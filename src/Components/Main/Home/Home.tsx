@@ -73,12 +73,12 @@ const Home = () => {
               </div>
               <div className="icons">
                 <div className="git">
-                  <a href="github.com/superkingsely">
+                  <a href="https://github.com/superkingsely" target="_blank" rel="noopener noreferrer">
                   <img src={git} alt="" />
                   </a>
                 </div>
                 <div className="linkedin">
-                  <a href="www.linkedin.com/in/onwumelu-chijioke">
+                  <a href="https://www.linkedin.com/in/onwumelu-chijioke" target="_blank" rel="noopener noreferrer">
                   <img src={linkedin} alt="" />
                   </a>
                 </div>

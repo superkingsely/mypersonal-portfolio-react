@@ -52,11 +52,11 @@ const ProjectObj = ({img,src,view,projName,packages,isdetail,details,language,pr
 
           {/* lower third */}
           <div className="btns-pro">
-              <a href={view}>
+              <a href={view} target="_blank" rel="noopener noreferrer">
 
             <button>View</button>
               </a>
-              <a href={src}>
+              <a href={src} target="_blank" rel="noopener noreferrer">
 
             <button>Src</button>
               </a>
