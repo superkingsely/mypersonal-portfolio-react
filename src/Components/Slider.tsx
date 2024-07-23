@@ -9,13 +9,13 @@ const Slider = () => {
     // func
     const handleclick=(arrow:any)=>{
         if(arrow==='left'){
-            if(slideindex >=0 && slideindex <2){
+            if(slideindex >=0 && slideindex <data.length-1){
                 setSlideindex(slideindex=>slideindex+1)
             }else{setSlideindex(0)}
         }else{
-            if(slideindex >0 && slideindex <=2){
+            if(slideindex >0 && slideindex <=data.length-1){
                 setSlideindex(slideindex=>slideindex-1)
-            }else{setSlideindex(slideindex+2)}
+            }else{setSlideindex(slideindex+data.length-1)}
         }
     }
   return (
@@ -34,9 +34,9 @@ const Slider = () => {
             </div>
             {/* wrapper */}
             <div className={`
-                wrapper h-[100vh] w-[300%] bg-white flex
+                wrapper h-[100vh] w-[${data.length*100}%] bg-white flex
                 `}
-                style={{transform:`translateX(${(-100/3)*slideindex}%)`}}
+                style={{transform:`translateX(${(-100/data.length)*slideindex}%)`}}
                 >
                     {/* slides */}
                 {
@@ -44,14 +44,16 @@ const Slider = () => {
                         return(
                             <div 
                             key={obj.id}
-                            className="slides bg-red-500  w-[1200px] flex flex-wrap ">
+                            className={`
+                            slides ${obj.bg}  w-[1200px] flex flex-wrap 
+                            `}>
 
                     <div className="left grow shrink basis-[300px] border bg-slate-300">
 
                     </div>
                     <div className="rigth grow shrink basis-[300px] border flex flex-col justify-center ">
-                        <h1 className='text-[70px]'>SUMMER SALE</h1>
-                        <p className="text-[20px] my-[50px]    ">Lorem ipsum dolor sit amet consectetur.afa safdas savas svasv assas vaa  fsvs sAvas</p>
+                        <h1 className='text-[70px]'>{obj.title}</h1>
+                        <p className="text-[20px] my-[50px]    ">{obj.desc}</p>
                         <div>
 
                         <button className="p-[10px] text-[20px] border">SHOW NOW</button>
