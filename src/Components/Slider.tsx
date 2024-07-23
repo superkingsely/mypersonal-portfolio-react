@@ -1,6 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material'
 import React, { useState } from 'react'
 import {data} from '../Data'
+
 const Slider = () => {
     // state
     const [slideindex,setSlideindex]=useState(0)
@@ -41,18 +42,18 @@ const Slider = () => {
                 `}
                 style={{transform:`translateX(${(-100/data.length)*slideindex}%)`}}
                 >
-                    {/* slide */}
+                    {/* slides */}
                 {
                     data.map((obj:any)=>{
                         return(
-                            <div
+                            <div 
                             key={obj.id}
-                             className={`
-                                slides ${obj.bg}  w-[1200px] flex flex-wrap
-                             `}>
-                                {/* Left */}
-                    <div className="left grow shrink basis-[300px] border bg-slate-300">
+                            className={`
+                            slides ${obj.bg}  w-[1200px] flex flex-wrap 
+                            `}>
 
+                    <div className="left grow shrink basis-[300px] border bg-slate-300 h-[100%] flex flex-col justify-center">
+                                <img className='w-[80%]' src={obj.img} alt="" />
                     </div>
                     <div className="rigth grow shrink basis-[300px] border flex flex-col justify-center ">
                         <h1 className='text-[70px]'>{obj.title}</h1>
@@ -67,7 +68,7 @@ const Slider = () => {
                     })
                 }
 
-                
+              
             </div>
         </div>
 
