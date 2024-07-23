@@ -50,7 +50,7 @@ const Slider = () => {
                              className={`
                                 slides ${obj.bg}  w-[1200px] flex flex-wrap
                              `}>
-
+                                {/* Left */}
                     <div className="left grow shrink basis-[300px] border bg-slate-300">
 
                     </div>
