@@ -1,6 +1,6 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material'
-import { Slide } from '@mui/material'
 import React, { useState } from 'react'
+import {data} from '../Data'
 
 const Slider = () => {
     // state
@@ -39,7 +39,12 @@ const Slider = () => {
                 style={{transform:`translateX(${(-100/3)*slideindex}%)`}}
                 >
                     {/* slides */}
-                <div className="slides bg-red-500  w-[1200px] flex flex-wrap ">
+                {
+                    data.map((obj:any)=>{
+                        return(
+                            <div 
+                            key={obj.id}
+                            className="slides bg-red-500  w-[1200px] flex flex-wrap ">
 
                     <div className="left grow shrink basis-[300px] border bg-slate-300">
 
@@ -53,10 +58,11 @@ const Slider = () => {
                         </div>
                     </div>
                 </div>
+                        )
+                    })
+                }
 
-                <div className="slides bg-green-500 w-[1200px]">1</div>
-
-                <div className="slides bg-yellow-500  w-[1200px]">1</div>
+              
             </div>
         </div>
 
