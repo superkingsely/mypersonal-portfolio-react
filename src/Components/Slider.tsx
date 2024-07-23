@@ -20,7 +20,7 @@ const Slider = () => {
     }
   return (
     <section className='min-h-[100vh]   bg-blue-500 '>
-        <div className="section-content relative max-w-[1200px] min-h-[100vh] mx-auto flex overflow-hidden  ">
+        <div className="section-content relative max-w-[1200px] min-h-[100vh] mx-auto flex  overflow-hidden ">
 
             <div className="arrowslide w-[50px] h-[50px] rounded-full border flex items-center justify-center absolute top-[50%]  left-[10px]  bottom-[50%] cursor-pointer z-10 "
             onClick={()=>handleclick('left')}
@@ -36,12 +36,12 @@ const Slider = () => {
             <div className={`
                 wrapper h-[100vh] w-[300%] bg-white flex
                 `}
-                style={{transform:`translateX(${slideindex*-1200}px)`}}
+                style={{transform:`translateX(${(-100/3)*slideindex}%)`}}
                 >
                     {/* slides */}
-                <div className="slides bg-red-500  w-[100%] flex flex-wrap ">
+                <div className="slides bg-red-500  w-[1200px] flex flex-wrap ">
 
-                    <div className="left grow shrink basis-[300px] border ">
+                    <div className="left grow shrink basis-[300px] border bg-slate-300">
 
                     </div>
                     <div className="rigth grow shrink basis-[300px] border flex flex-col justify-center ">
@@ -54,9 +54,9 @@ const Slider = () => {
                     </div>
                 </div>
 
-                <div className="slides bg-green-500 w-[100%]">1</div>
+                <div className="slides bg-green-500 w-[1200px]">1</div>
 
-                <div className="slides bg-yellow-500  w-[100%]">1</div>
+                <div className="slides bg-yellow-500  w-[1200px]">1</div>
             </div>
         </div>
 
