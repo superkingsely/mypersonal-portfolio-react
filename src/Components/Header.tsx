@@ -10,7 +10,7 @@ const Left=styled.div`
 `
 const Header = () => {
   return (
-    <header>
+    <header className="overflow-hidden ">
         <div className="announcement text-center bg-teal-300 text-white font-bold">
             Super Deal! Free Shipping on Orders over $50
         </div>
@@ -56,4 +56,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
