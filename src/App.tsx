@@ -1,5 +1,5 @@
 import Header from './Components/Header'
-import Slider from './Components/Slider'
+import Slider from './Components/Slider/Slider'
 
 
 const App = () => {
