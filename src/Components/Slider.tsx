@@ -2,6 +2,8 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material'
 import React, { useState } from 'react'
 import {data} from '../Data'
 
+
+
 const Slider = () => {
     // state
     const [slideindex,setSlideindex]=useState(0)
