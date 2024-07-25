@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './slider.css'
-
+import {data} from '../../Data'
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material'
 
 const Slider = () => {
   const [slidecount,setSlidecount]=useState(0)
@@ -19,28 +20,41 @@ const Slider = () => {
   return (
     <div className="slider">
       <div 
-      style={{transform:`translateX(-${slidecount*100}vw)`}}
+      style={{transform:`translateX(-${slidecount*100/3}%)`}}
       className="slides">
-        <div className="slide">
-          <div className="left-box box">
-            
-          </div>
-          <div className="right-box box">
 
+       {
+        data.map((obj:any)=>{
+          return(
+            <div className={`
+              slide ${obj.bg}
+            `}>
+            <div className="left-box box">
+              <img src={obj.img} alt="" />
+            </div>
+            <div className="right-box box">
+              <h1>{obj.title}</h1>
+              <p className='my-[50px] text-[20px]'>{obj.desc}</p>
+              <div className="">
+
+              <button className='border px-[10px] py-[5px]'>SHOW NOW</button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="slide">2</div>
-        <div className="slide">3</div>
+          )
+        })
+       }
+        
       </div>
       <div 
       onClick={()=>handleclick('left')}
       className="arrow left">
-
+        <ArrowLeftOutlined/>
       </div>
       <div 
       onClick={()=>handleclick('right')}
       className="arrow right">
-
+        <ArrowRightOutlined/>
       </div>
     </div>
   )
