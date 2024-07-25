@@ -1,3 +1,4 @@
+import Categories from './Components/Categories/Categories'
 import Header from './Components/Header'
 import Slider from './Components/Slider/Slider'
 
@@ -7,6 +8,7 @@ const App = () => {
     <>
     <Header/>
     <Slider/>
+    <Categories/>
     </>
   )
 }
