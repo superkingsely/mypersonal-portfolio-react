@@ -1,4 +1,5 @@
 import Categories from './Components/Categories/Categories'
+import Footer from './Components/Footer/Footer'
 import Header from './Components/Header'
 import Newsletter from './Components/Newsletter/Newsletter'
 import Productlist from './Components/Productlist/Productlist'
@@ -13,6 +14,7 @@ const App = () => {
     <Categories/>
     <Productlist/>
     <Newsletter/>
+    <Footer/>
     </>
   )
 }
