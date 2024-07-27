@@ -1,10 +1,19 @@
-import React from 'react'
-
+import './categories.css'
+import Category from './category/category'
+import Cells from '../Cells/Cells'
 const Categories = () => {
   return (
-    <section>
-        <div className="section-content border">
-
+    <section className='min-h-[0vh] '>
+        <div className="section-content min-h-[0vh]">
+            <div className="cat-array">
+              <Cells
+              width={300}
+              height={400}
+              arrayLength={3}
+              >
+                <Category/>
+              </Cells>
+            </div>
         </div>
     </section>
   )

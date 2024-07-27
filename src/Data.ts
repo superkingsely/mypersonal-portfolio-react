@@ -15,20 +15,20 @@ export const data:Array<Islideobj>=[
         img: img,
         title: "SUMMER SALE",
         desc: "1st Lorem ipsum dolor sit amet consectetur.afa safdas savas svasv assas vaa  fsvs sAvas",
-        bg: "bg-blue-100"
+        bg: "bg-blue-50"
     },
     {
         id: 2,
         img: chi,
         title: "AUTUMN COLLECTION",
         desc: "2nd Lorem ipsum dolor sit amet consectetur.afa safdas savas svasv assas vaa  fsvs sAvas",
-        bg: "bg-yellow-100"
+        bg: "bg-yellow-50"
     },
     {
         id: 3,
         img: native,
         title: "LOUNGEWEAR LOVE",
         desc: "3rd Lorem ipsum dolor sit amet consectetur.afa safdas savas svasv assas vaa  fsvs sAvas",
-        bg: "bg-red-100"
+        bg: "bg-red-50"
     },
 ]
