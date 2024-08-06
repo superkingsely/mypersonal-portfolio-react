@@ -1,5 +1,6 @@
 import React from 'react'
 import Productlist from '../Components/Productlist/Productlist'
+import Newsletter from '../Components/Newsletter/Newsletter'
 
 const ProductListPage = () => {
   return (
@@ -38,6 +39,7 @@ const ProductListPage = () => {
             </div>
             <Productlist/>
         </div>
+        <Newsletter/>
    </section>
   )
 }

@@ -6,18 +6,27 @@ import ProductListPage from '../../Pages/ProductListPage'
 import ProductPage from '../../Pages/ProductPage'
 import Newsletter from '../Newsletter/Newsletter'
 import CartPage from '../../Pages/CartPage'
-
+import {Route,  Routes } from 'react-router-dom'
+import PageNotFound from '../../Pages/PageNotFound'
 const Layout = () => {
 
   return (
     <>
         <Header/>
         <Main>
-            {/* <Home/> */}
-            {/* <ProductListPage/> */}
+          
+            <Routes>
+              <Route  path='/'  element={<Home/>}/>
+              <Route  path='/home'  element={<Home/>}/>
+              <Route  path='/cart'  element={<CartPage/>}/>
+              <Route  path='/products'  element={<ProductListPage/>}/>
+              <Route  path='*'  element={<PageNotFound/>}/>
             {/* <ProductPage/> */}
             {/* <Newsletter/> */}
-            <CartPage/>
+            
+            
+            </Routes>
+          
         </Main>
         <Footer/>
     </>
