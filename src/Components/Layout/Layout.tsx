@@ -8,6 +8,7 @@ import Newsletter from '../Newsletter/Newsletter'
 import CartPage from '../../Pages/CartPage'
 
 const Layout = () => {
+
   return (
     <>
         <Header/>
