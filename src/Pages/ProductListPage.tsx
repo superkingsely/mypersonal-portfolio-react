@@ -1,6 +1,6 @@
 import React from 'react'
-import Productlist from '../Components/Productlist/Productlist'
-import Newsletter from '../Components/Newsletter/Newsletter'
+import Productlist from '../components/Productlist/Productlist'
+import Newsletter from '../components/Newsletter/Newsletter'
 
 const ProductListPage = () => {
   return (
