@@ -1,11 +1,16 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Payment from '../../Pages/Payment'
+import Success from '../../Pages/Success'
 
 const Main = () => {
   return (
     <main>
-        <div className="main-content flex flex-col justify-center items-center min-h-[100vh] ">
-            <button className='bg-black text-white font-bold px-5 py-2'>Payment</button>
-        </div>
+        <Routes>
+          <Route path='/' element={<Payment/>} />
+          <Route path='/payment' element={<Payment/>} />
+          <Route path='/success' element={<Success/>} />
+        </Routes>
     </main>
   )
 }
