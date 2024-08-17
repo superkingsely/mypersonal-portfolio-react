@@ -6,9 +6,9 @@ import {Link, Route,  Routes,redirect } from 'react-router-dom'
 import PageNotFound from '../../Pages/PageNotFound'
 import Login from '../../Pages/LoginPage'
 import Register from '../../Pages/Register'
-import Header from '../../components/Header'
-import Main from '../../components/Main/Main'
-import Footer from '../../components/Footer/Footer'
+import Header from '../../Components/Header'
+import Main from '../../Components/Main/Main'
+import Footer from '../../Components/Footer/Footer'
 const Layout = () => {
   const user=false
 
@@ -22,6 +22,7 @@ const Layout = () => {
               <Route  path='/home'  element={<Home/>}/>
               <Route  path='/cart'  element={<CartPage/>}/>
               <Route  path='/products'  element={<ProductListPage/>}/>
+              <Route  path='/products/:id'  element={<ProductListPage/>}/>
               <>
               {
                 user?(   <Route  path='/login' element={<Login/>}/>):(<Route  path='*'  element={<PageNotFound/>}/>)

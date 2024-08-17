@@ -1,7 +1,8 @@
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material'
-import img from '../../../assets/portfolio1.jpg'
 import './product.css'
-const Product = () => {
+// import imgo from '../../../assets/portfolio1.jpg'
+
+const Product = ({img}:any) => {
   return (
     <div className="product w-[250px] grow relative z-[1]">
         <img className='w-[100%]' src={img} alt="" />

@@ -1,7 +1,7 @@
-import Slider from '../components/Slider/Slider'
-import Categories from '../components/Categories/Categories'
-import Productlist from '../components/Productlist/Productlist'
-import Newsletter from '../components/Newsletter/Newsletter'
+import Slider from '../Components/Slider/Slider'
+import Categories from '../Components/Categories/Categories'
+import Productlist from '../Components/Productlist/Productlist'
+import Newsletter from '../Components/Newsletter/Newsletter'
 
 const Home = () => {
   return (

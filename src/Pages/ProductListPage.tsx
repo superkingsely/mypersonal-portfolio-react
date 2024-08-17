@@ -1,8 +1,27 @@
-import React from 'react'
-import Productlist from '../components/Productlist/Productlist'
-import Newsletter from '../components/Newsletter/Newsletter'
+import React, { useState } from 'react'
+import Productlist from '../Components/Productlist/Productlist'
+import Newsletter from '../Components/Newsletter/Newsletter'
+import { useLocation } from 'react-router-dom'
 
 const ProductListPage = () => {
+    const location=useLocation()
+  const cat=location.pathname.split('/')[2]
+  console.log(cat)
+  const [filters,setFilters]=useState<any>({})
+  const [sort,setSort]=useState<any>('newest')
+//   functions
+const handlefilter=(e:any)=>{
+    const value=e.target.value;
+    setFilters({
+        ...filters,
+        [e.target.name]:value
+    })
+}
+const handlesort=(e:any)=>{
+    setSort(e.target.value)
+}
+console.log(filters,sort)
+
   return (
    <section className=''>
         <div className="section-content min-h-[0vh]">
@@ -10,34 +29,44 @@ const ProductListPage = () => {
             <div className="filters flex justify-between">
                 <div>
                     <span className='font-bold'>filter:</span>
-                    <select className='cursor-pointer ' name="" id="">
-                        <option disabled selected  value="">Color</option>
-                        <option value="">red</option>
-                        <option value="">green</option>
-                        <option value="">blue</option>
-                        <option value="">white</option>
-                        <option value="">black</option>
-                        <option value="">yellow</option>
+                    <select 
+                    onChange={(e)=>handlefilter(e)}
+                    className='cursor-pointer ' name="color" id="">
+                        <option disabled   value="">Color</option>
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option value="blue">blue</option>
+                        <option value="white">white</option>
+                        <option value="black">black</option>
+                        <option >yellow</option>
                     </select>
-                    <select className='cursor-pointer ' name="" id="">
-                        <option disabled selected  value="">Size</option>
-                        <option value="">xs</option>
-                        <option value="">s</option>
-                        <option value="">m</option>
-                        <option value="">l</option>
-                        <option value="">xl</option>
+                    <select 
+                    onChange={(e)=>handlefilter(e)}
+                    className='cursor-pointer ' name="size" id="">
+                        <option disabled   value="">Size</option>
+                        <option>xs</option>
+                        <option>s</option>
+                        <option>m</option>
+                        <option>l</option>
+                        <option>xl</option>
                     </select>
                 </div>
                 <div>
                     <span className='font-bold' >filter2:</span>
-                    <select className='cursor-pointer ' name="" id="">
-                        <option disabled selected  value="">Newest</option>
-                        <option value="">price(asc)</option>
-                        <option value="">price(desc)</option>
+                    <select 
+                    onChange={(e)=>handlesort(e)}
+                    className='cursor-pointer ' name="" id="">
+                        <option  value="newest">Newest</option>
+                        <option value="asc">price(asc)</option>
+                        <option value="desc">price(desc)</option>
                     </select>
                 </div>
             </div>
-            <Productlist/>
+            <Productlist
+            cat={cat}
+            filters={filters}
+            sort={sort}
+            />
         </div>
         <Newsletter/>
    </section>

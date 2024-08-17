@@ -1,6 +1,8 @@
 import './categories.css'
-import Category from './category/category'
-import Cells from '../Cells/Cells'
+import Category from '../../Components/Categories/category/category'
+import Cells from '../../Components/Cells/Cells'
+import { categories } from '../../Data'
+import { Link } from 'react-router-dom'
 const Categories = () => {
   return (
     <section className='min-h-[0vh] '>
@@ -9,9 +11,21 @@ const Categories = () => {
               <Cells
               width={300}
               height={400}
-              arrayLength={3}
+              arrayLength={1}
               >
-                <Category/>
+                {/* <Category/> */}
+                {
+                  categories.map((obj:any)=>{
+                    return(
+                      <Link to={`/products/${obj.cat}`}>
+                      <Category
+                      img={obj.img}
+                      title={obj.title}
+                      />
+                      </Link>
+                    )
+                  })
+                }
               </Cells>
             </div>
         </div>
