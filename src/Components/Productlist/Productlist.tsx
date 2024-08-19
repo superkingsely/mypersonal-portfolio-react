@@ -3,7 +3,7 @@ import Cells from '../../Components/Cells/Cells'
 import Product from '../../Components/Productlist/product/Product'
 import { popularProducts } from '../../Data'
 // import axios from 'axios'
-// import img from '../../assets/portfolio5.jpg'
+import img from '../../assets/portfolio5.jpg'
 
 
 const Productlist = ({cat,filters,sort}:any) => {
@@ -33,7 +33,9 @@ const Productlist = ({cat,filters,sort}:any) => {
         // err:net_err_200(ok)= cors
         // err:net_err_connection refuse= port
         const res=await fetch(cat?`http://localhost:5000/api/offline-products?category=${cat}`:'http://localhost:5000/api/offline-products')
-        console.log(res)
+        const data=await res.json()
+        console.log(res,'da',data)
+        setProducts(data)
       }catch(e:any){
         console.log('err',e.message)
       }
@@ -52,10 +54,13 @@ const Productlist = ({cat,filters,sort}:any) => {
             >
                 {/* <Product/> */}
                 {
-                  popularProducts.slice(0,4).map((obj:any)=>{
+
+                  products&&products.slice(0,4).map((obj:any)=>{
                     return(
                       <Product
-                      img={obj.img}
+                      img={img}
+                      idd={obj.id}
+                      obj={obj}
                       />
                     )
                   })
@@ -68,10 +73,12 @@ const Productlist = ({cat,filters,sort}:any) => {
             >
                 {/* <Product/> */}
                 {
-                  popularProducts.slice(4,8).map((obj:any)=>{
+                  products&&products.slice(4,8).map((obj:any)=>{
                     return(
                       <Product
-                      img={obj.img}
+                      img={img}
+                      idd={obj.id}
+                      obj={obj}
                       />
                     )
                   })

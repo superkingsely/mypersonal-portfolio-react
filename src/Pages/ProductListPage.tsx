@@ -25,7 +25,7 @@ console.log(filters,sort)
   return (
    <section className=''>
         <div className="section-content min-h-[0vh]">
-            <h1 className='my-[10px]'>Dresses</h1>
+            <h1 className='my-[10px]'>{cat}</h1>
             <div className="filters flex justify-between">
                 <div>
                     <span className='font-bold'>filter:</span>

@@ -23,6 +23,7 @@ const Layout = () => {
               <Route  path='/cart'  element={<CartPage/>}/>
               <Route  path='/products'  element={<ProductListPage/>}/>
               <Route  path='/products/:id'  element={<ProductListPage/>}/>
+              <Route  path='/product/:id'  element={<ProductPage/>}/>
               <>
               {
                 user?(   <Route  path='/login' element={<Login/>}/>):(<Route  path='*'  element={<PageNotFound/>}/>)
